@@ -14,12 +14,12 @@ const Header = () => {
                             Habesha City
                         </a>
                         <ul className="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="events.html">Events</a></li>
-                            <li class="scroll-to-section"><a href="#about">About us</a></li>                                                                        
-                            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>                           
+                            <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
+                            <li className="scroll-to-section"><a href="events.html">Events</a></li>
+                            <li className="scroll-to-section"><a href="#about">About us</a></li>                                                                        
+                            <li className="scroll-to-section"><a href="#contact">Contact Us</a></li>                           
                         </ul>        
-                        <a class='menu-trigger'>
+                        <a className='menu-trigger'>
                             <span>Menu</span>
                         </a>
                     </nav>        
