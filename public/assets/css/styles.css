@@ -1034,3 +1034,150 @@ section.about-us .item p {
   color: #fff;
   margin-bottom: 20px;
 }
+
+ /* 
+---------------------------------------------
+courses
+--------------------------------------------- 
+*/
+
+section.previous-events {
+  background-image: url(../images/greybackground.png);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 130px;
+}
+
+.previous-events .item .down-content {
+  background-color: #fff;
+}
+
+.previous-events .item .down-content h4 {
+  padding: 25px;
+  font-size: 18px;
+  color: #1f272b;
+  text-align: center; 
+  border-bottom: 1px solid #eee;
+}
+
+.previous-events .item .down-content .info {
+  padding: 25px;
+}
+
+.previous-events .item .down-content .info ul li {
+  display: inline-block;
+  margin-right: 1px;
+}
+
+.previous-events .item .down-content .info ul li i {
+  color: #f5a425;
+  font-size: 14px;
+}
+
+.previous-events .item .down-content .info span {
+  color: #a12c2f;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}
+
+.previous-events .owl-nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-45px);
+}
+
+.previous-events .owl-dots {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.previous-events .owl-dots .owl-dot {
+  transition: all .5s;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  margin: 0px 5px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.previous-events .owl-dots .active {
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+}
+    
+.previous-events .owl-nav .owl-prev{
+  margin-right: 10px;
+  outline: none;
+  position: absolute;
+  left: -80px;
+}
+
+.previous-events .owl-nav .owl-prev span,
+.previous-events .owl-nav .owl-next span {
+  opacity: 0;
+}
+
+.previous-events .owl-nav .owl-prev:before {
+  display: inline-block;
+  font-family: 'Font Awesome 5 pro';
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: '\f104';
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+
+.previous-events .owl-nav .owl-prev {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.previous-events .owl-nav .owl-prev:hover {
+  opacity: 0.9;
+}
+
+.previous-events .owl-nav .owl-next {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.previous-events .owl-nav .owl-next:hover {
+  opacity: 0.9;
+}
+
+.previous-events .owl-nav .owl-next{
+  margin-left: 10px;
+  outline: none;
+  position: absolute;
+  right: -85px;
+}
+
+.previous-events .owl-nav .owl-next:before {
+  display: inline-block;
+  font-family: 'Font Awesome 5 pro';
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: '\f105';
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}

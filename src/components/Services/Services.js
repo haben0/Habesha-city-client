@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import { Container, Row, Col } from 'react-bootstrap';
 import OwlCarousel from 'react-owl-carousel';
 import Service from './Service';
 
@@ -12,7 +10,6 @@ const Services = () => {
         <Row>
             <Col lg={12}>
                 <OwlCarousel items={3}  
-                    className="owl-theme"  
                     loop  
                     nav  
                     margin={30} > 
