@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./components/About/About.js";
 import UpcomingActivities from "./components/Activities/UpcomingActivities.js";
 import Banner from "./components/Banner/Banner.js";
 import Header from "./components/Header/Header.js"
@@ -14,6 +15,7 @@ const App = () => {
             <Banner/>
             <Services/>
             <UpcomingActivities/>
+            <About/>
             {/* <h1>Habesha City</h1> */}
         </div>
     );
