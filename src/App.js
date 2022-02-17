@@ -6,7 +6,8 @@ import Header from "./components/Header/Header.js"
 import SubHeader from "./components/Header/SubHeader.js"
 import Services from "./components/Services/Services.js";
 import PrevActivities from "./components/Activities/PrevActivities.js";
-
+import Quote from "./components/Quote/Quote.js";
+import ContactUs from "./components/ContactUs/ContactUs.js";
 
 const App = () => {
     return (
@@ -18,6 +19,8 @@ const App = () => {
             <UpcomingActivities/>
             <About/>
             <PrevActivities/>
+            <Quote/>
+            <ContactUs/>
             {/* <h1>Habesha City</h1> */}
         </div>
     );
