@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+
+import { getActivities } from './actions/activities';
 import About from "./components/About/About.js";
 import UpcomingActivities from "./components/Activities/UpcomingActivities.js";
 import Banner from "./components/Banner/Banner.js";
@@ -9,7 +12,14 @@ import PrevActivities from "./components/Activities/PrevActivities.js";
 import Quote from "./components/Quote/Quote.js";
 import ContactUs from "./components/ContactUs/ContactUs.js";
 
+
 const App = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(getActivities());
+    }, [dispatch]);
+
     return (
         <div>
             <SubHeader/>

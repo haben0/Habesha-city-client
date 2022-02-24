@@ -6,11 +6,11 @@ import PrevActivity from './Activity/PrevActivity';
 const PrevActivities = () => {
     return (
 
-        <section class="previous-events" id="gallery">
+        <section className="previous-events" id="gallery">
             <Container>
                 <Row>
                 <Col lg={12}>
-                    <div class="section-heading">
+                    <div className="section-heading">
                         <h2>Previous Events</h2>
                     </div>
                 </Col>

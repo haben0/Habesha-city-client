@@ -1,10 +1,16 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Activity from './Activity/Activity';
 
 const UpcomingActivities = () => {
+    const upcomingActivities = useSelector((state) => state.activities)
+
+    console.log(upcomingActivities);
+
     return (
             <section className="upcoming-events" id="events">
                 <Container>

@@ -3,11 +3,11 @@ import photo from '../../../assets/images/blackpool.jpg';
 
 const PrevActivity = () => {
     return (
-        <div class="item">
+        <div className="item">
         <img src={photo} alt=""/>
-        <div class="down-content">
+        <div className="down-content">
           <h4>Blackpool Tournament</h4>
-          <div class="info">
+          <div className="info">
             <a href="event-details-blackpool.html">View Gallery</a>
           </div>
         </div>
