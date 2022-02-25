@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import activities from './activities';
+import {activities, upcomingActivities,previousActivities}  from './activities';
 
 export default combineReducers({
-    activities
+    activities, upcomingActivities, previousActivities
 });

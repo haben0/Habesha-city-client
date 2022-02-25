@@ -1,11 +1,14 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'react-bootstrap';
 import OwlCarousel from 'react-owl-carousel';
 import PrevActivity from './Activity/PrevActivity';
 
 const PrevActivities = () => {
-    return (
+    const previousActivities = useSelector((state) => state.previousActivities)
 
+    console.log(previousActivities);
+    return (
         <section className="previous-events" id="gallery">
             <Container>
                 <Row>

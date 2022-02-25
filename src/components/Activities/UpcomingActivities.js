@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Activity from './Activity/Activity';
 
 const UpcomingActivities = () => {
-    const upcomingActivities = useSelector((state) => state.activities)
+    const upcomingActivities = useSelector((state) => state.upcomingActivities)
 
     console.log(upcomingActivities);
 

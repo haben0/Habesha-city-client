@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
-import { getActivities } from './actions/activities';
+import { getPreviousActivities, getUpcomingActivities } from './actions/activities';
 import About from "./components/About/About.js";
 import UpcomingActivities from "./components/Activities/UpcomingActivities.js";
 import Banner from "./components/Banner/Banner.js";
@@ -17,7 +17,8 @@ const App = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getActivities());
+        dispatch(getUpcomingActivities());
+        dispatch(getPreviousActivities());
     }, [dispatch]);
 
     return (
