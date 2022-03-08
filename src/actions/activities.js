@@ -30,3 +30,29 @@ export const getPreviousActivities = () => async (dispatch) => {
         console.log(error.message);
     }   
 }
+
+export const createActivity = (activity) => async (dispatch) => {
+    try {
+        console.log({
+            title : activity.title,
+            eventDate : `${activity.activityDate} ${activity.activityTime}`,
+            location: activity.location,
+            description: activity.description,  
+            selectedFile: activity.selectedFile, 
+            tags: activity.tags
+          })
+
+        const { data } = await api.createActivity({
+            title : activity.title,
+            eventDate : `${activity.activityDate} ${activity.activityTime}`,
+            location: activity.location,
+            description: activity.description,  
+            selectedFile: activity.selectedFile, 
+            tags: activity.tags
+          });
+
+        dispatch({type: 'CREATE', payload: data });
+    } catch (error) {
+        console.log(error.message);
+    }
+}

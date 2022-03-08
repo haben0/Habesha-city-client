@@ -3,7 +3,7 @@ export const activities =  (activities = [], action) => {
         case 'FETCH_ALL':
             return action.payload;
         case 'CREATE':
-            return activities;
+            return [ ...activities, action.payload];
         default:
             return activities;
     }
