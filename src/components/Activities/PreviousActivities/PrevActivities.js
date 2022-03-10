@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Row, Col } from 'react-bootstrap';
 import OwlCarousel from 'react-owl-carousel';
-import PrevActivity from './Activity/PrevActivity';
+import PrevActivity from './Activity/PrevActivity.js';
 
 const PrevActivities = () => {
     const previousActivities = useSelector((state) => state.previousActivities)

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Activity from './Activity/Activity';
+import UpcomingActivity from './Activity/UpcomingActivity';
 
 const UpcomingActivities = () => {
     const upcomingActivities = useSelector((state) => state.upcomingActivities)
@@ -37,12 +37,7 @@ const UpcomingActivities = () => {
                                 </div>
                             </Col>
                             <Col lg={8}>
-                                <Row>
-                                    <Activity/>
-                                    <Activity/>
-                                    <Activity/>
-                                    <Activity/>
-                                </Row>
+                               <UpcomingActivity upcomingActivities={upcomingActivities}/>
                             </Col>
                     </Row>
                 </Container>    
