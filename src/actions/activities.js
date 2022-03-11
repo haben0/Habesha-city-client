@@ -33,19 +33,11 @@ export const getPreviousActivities = () => async (dispatch) => {
 
 export const createActivity = (activity) => async (dispatch) => {
     try {
-        console.log({
-            title : activity.title,
-            eventDate : `${activity.activityDate} ${activity.activityTime}`,
-            location: activity.location,
-            description: activity.description,  
-            selectedFile: activity.selectedFile, 
-            tags: activity.tags
-          })
-
         const { data } = await api.createActivity({
             title : activity.title,
             eventDate : `${activity.activityDate} ${activity.activityTime}`,
             location: activity.location,
+            shortDescription: activity.shortDescription,
             description: activity.description,  
             selectedFile: activity.selectedFile, 
             tags: activity.tags
